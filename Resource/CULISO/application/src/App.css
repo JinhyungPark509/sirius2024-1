@@ -1,0 +1,159 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.aiDiv{
+  position: relative;
+  border: 1px solid;
+  border-color: #cacaca;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn ease-out 1s forwards;
+}
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+      33deg,
+      rgba(14, 19, 20, 0) 48.63%,
+      rgba(124, 154, 204, 0.2) 56.31%,
+      rgba(85, 112, 205, 0.19) 62.04%,
+      rgba(24, 46, 242, 0.2) 69.1%
+    ),
+    linear-gradient(200deg, #a9d7f1 59.9%, #9ed4f2 66.52%, #55aee0 86.36%);
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.chat-log {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  background-color: none;
+  height: 1px;
+}
+.chat-log::-webkit-scrollbar{
+  width: 8px;
+  
+}
+.chat-log::-webkit-scrollbar-thumb{
+  background-color: rgb(30, 172, 253);
+  box-shadow: inset 0px 0px 2px white;
+  border-radius: 20px;
+}
+.chat-log::-webkit-scrollbar-track{
+  background-color: none;
+}
+
+.chat-message {
+  font-family: "SejonghospitalBold";
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 20px;
+  line-height: 1.5;
+  word-break: break-word;
+  max-width: 300px;
+}
+
+.chat-box.user{
+  display: flex;
+  justify-content: right;
+}
+.chat-message.user {
+  margin: 10px 0;
+  text-align: right;
+  background-color: #b1dbfa;
+  border: 2px solid #3886bd;
+}
+.chat-box.bot{
+  display: flex;
+  justify-content: left;
+}
+.chat-message.bot {
+  margin: -2px 0 10px 0;
+  text-align: left;
+  background-color: #f0f0f0;
+  border: 2px solid #868686;
+}
+
+.formatted-line.indented {
+  margin-left: 20px; /* 들여쓰기 적용 */
+}
+
+.chat-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.chat-input {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  width: 90%;
+  position: relative;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.chat-input img{
+  margin: 0 7px;
+  position: absolute;
+}
+.chat-input button:hover {
+  background-color: #0056b3;
+}
+
+.chat-input button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+.culiBox{
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  color:white;
+}
+.culi{
+  width:35px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.topMenubar{
+  height: 50px;
+  width: 100vw;
+  background-color: none;
+  display:flex;
+  justify-content:left;
+  align-items:center;
+}
